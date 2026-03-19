@@ -1,0 +1,100 @@
+{
+  "nodes": [
+    {
+      "state_id": "state_2e6206ec",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step0.png",
+	"description": "desc"
+    },
+    {
+      "state_id": "state_dab65fb7",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step1.png",
+	"description": "desc"
+    },
+    {
+      "state_id": "state_b8b4fa9a",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step1.png",
+	"description": "desc"
+    },
+    {
+      "state_id": "state_24d7827e",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step2.png",
+	"description": "desc"
+    },
+    {
+      "state_id": "state_a0c16513",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step3.png",
+	"description": "desc"
+    },
+    {
+      "state_id": "state_967cb1d8",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step4.png",
+	"description": "desc"
+    },
+    {
+      "state_id": "state_4d485d7f",
+      "image_path": "./logs/20260126_220356/AudioRecorderRecordAudio/round_0\\images\\screenshot_step5.png",
+	"description": "desc"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_c388a514",
+      "from_state": "state_2e6206ec",
+      "to_state": "state_dab65fb7",
+      "thought": "The current screen is the home screen with various app icons. To find the Audio Recorder app, I need to open the app drawer first. The standard way to open the app drawer on Android is by swiping up from the bottom edge of the screen.",
+      "description": "Swipe up from the bottom of the screen to open the app drawer.",
+      "is_error_transition": false
+    },
+    {
+      "edge_id": "edge_f919d10c",
+      "from_state": "state_dab65fb7",
+      "to_state": "state_b8b4fa9a",
+
+      "thought": "The current screen displays a system dialog with the message \"com.google.androidenv.accessibilityforwarder keeps stopping\". To proceed with launching the Audio Recorder app, I first need to dismiss this dialog. The dialog provides two options: \"App info\" and \"Close app\". The \"Close app\" option is visible and needs to be clicked to dismiss the dialog and continue with the plan.",
+      "description": "Click the \"Close app\" button in the dialog to dismiss it.",
+      "is_error_transition": false
+    },
+    {
+      "edge_id": "edge_e26aced1",
+      "from_state": "state_b8b4fa9a",
+      "to_state": "state_24d7827e",
+
+        "thought": "The current screen shows the app drawer with various applications. The goal is to launch the Audio Recorder app. I can see an icon labeled \"Audio Recor...\" with a red \"REC\" badge, which is the Audio Recorder app. The next step is to click on this app icon to launch it.",
+        "description": "Click on the Audio Recorder app icon to launch it.",
+      "is_error_transition": false
+    },
+    {
+      "edge_id": "edge_b99210d1",
+      "from_state": "state_24d7827e",
+      "to_state": "state_a0c16513",
+
+        "thought": "The current screen displays a \"Warning!\" dialog box with the message \"Some of your records was deleted or moved\". There are two buttons: \"Ok\" and \"Details\". To proceed with the recording process as per the subgoal, we need to dismiss this dialog by clicking the \"Ok\" button.",
+        "description": "Click the \"Ok\" button to dismiss the warning dialog.",
+      "is_error_transition": false
+    },
+    {
+      "edge_id": "edge_9670877b",
+      "from_state": "state_a0c16513",
+      "to_state": "state_967cb1d8",
+        "thought": "The current screen shows the Audio Recorder app interface with a large white circular button in the center, which is the record button. The previous steps have successfully opened the app and dismissed any dialog boxes. To start recording as per the current subgoal, I need to click this record button.",
+        "description": "Click the record button (large white circle) in the center of the screen to start recording.",
+      "is_error_transition": false
+    },
+    {
+      "edge_id": "edge_f62b585f",
+      "from_state": "state_967cb1d8",
+      "to_state": "state_4d485d7f",
+        "thought": "The current screen shows the Audio Recorder app is actively recording, as indicated by the \"Recording...\" text and the timer at 00:26. The previous actions successfully launched the app, dismissed warnings, and started the recording. Now, according to the current subgoal, the next step is to stop the recording. The stop button is the white square icon located fourth from the left at the bottom of the screen, so we need to click it to stop the recording.",
+        "description": "Click the stop button (white square) at the bottom of the screen to stop the recording.",
+      "is_error_transition": false
+    },
+    {
+      "edge_id": "edge_15ff8adb",
+      "from_state": "state_4d485d7f",
+      "to_state": "state_4d485d7f",
+        "thought": "The current screen displays a \"New name\" dialog box for saving the recorded audio, with a \"Save\" button visible. The previous actions have successfully stopped the recording and triggered this save dialog. To complete the current subgoal of saving the audio file, the next step is to click the \"Save\" button.",
+        "description": "Click the \"Save\" button in the dialog box to save the audio file.",
+      "is_error_transition": false
+    }
+  ]
+}

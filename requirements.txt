@@ -1,0 +1,12 @@
+httpx
+numpy
+Pillow
+openai
+qwen_vl_utils
+torch
+torchvision
+
+absl-py==2.1.0
+android-env==1.2.3
+dm-env==1.6
+immutabledict==2.0.0
